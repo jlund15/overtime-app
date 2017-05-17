@@ -19,7 +19,18 @@ describe 'navigate' do
       expect(@post.reload.status).to eq('approved')
     end
 
-    xit 'cannot be edited by a non admin' do
+    it 'can be edited by an admin' do
+
+    end
+
+    it 'cannot be edited by a non admin' do
+      logout(:user)
+      user = FactoryGirl.create(:user)
+      login_as(user, :scope => :user)
+
+      visit edit_post_path(@post)
+
+      expect(page).to_not have_content('Approved')
     end
   end
 end
