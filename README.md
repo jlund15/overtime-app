@@ -24,3 +24,10 @@
 ## Refactor TODOS:
 - Refactor user association integration test in post_spec
 - Refactor posts/_form for admin user status
+- Fix post_spec.rb:82 to use factories
+
+## Bug Fixes
+- Non authorized users are able to edit when signed in as test@test.com email
+- Growl notification is not appearing when permission is denied
+- Fix post_spec.rb:82 to use factories
+- Fix post_spec.rb:52 to have correct user reference and not require update
