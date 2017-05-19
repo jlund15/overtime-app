@@ -26,3 +26,5 @@
 ## Bug Fixes
 - Non authorized users are able to edit when signed in as test@test.com email
 - Growl notification is not appearing when permission is denied
+- Time Entries "status" title is over edit column
+- Color and titleize status values are not following code
