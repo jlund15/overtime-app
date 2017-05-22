@@ -22,10 +22,7 @@
 - x Update the styles for forms
 
 ## Refactor TODOS:
-- Refactor posts/_form for admin user status
-
-## Bug Fixes
-- Non authorized users are able to edit when signed in as test@test.com email
-- Growl notification is not appearing when permission is denied
-- Time Entries "status" title is over edit column
-- Color and titleize status values are not following code
+- Integrated validation for phone attr in User:
+    # No spaces or dashes
+    # exactly 10 charachters
+    # all charachters have to be a number
