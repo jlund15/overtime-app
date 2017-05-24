@@ -29,7 +29,6 @@ class AdminUserDashboard < Administrate::BaseDashboard
     :posts,
     :company,
     :email,
-    :phone
     :phone,
     :sign_in_count,
     :current_sign_in_at,
