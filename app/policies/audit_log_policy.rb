@@ -1,7 +1,11 @@
 class AuditLogPolicy < ApplicationPolicy
-  def index?
+  def index? #TODO refactor
     return true if admin?
   end
+
+  def confirm?
+    record.user_id == user_id
+  end 
 
   private
 
