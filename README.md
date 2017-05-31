@@ -6,23 +6,17 @@
 - x Post -> date:date rationale:text
 - x User -> Devise
 - x AdminUser -> STI
-- AuditLog
+- X AuditLog
 
 ## Features:
-- Approval Workflow
-- SMS Sending -> link to approval or overtime input
+- X Approval Workflow
+- X SMS Sending -> link to approval or overtime input
 - x Administrate admin dashboard
 - x Block non admin and guest users
-- Email summary to managers for approval
-- Needs to be documented if employee did not log overtime
+- X Email summary to managers for approval
+- X Needs to be documented if employee did not log overtime
+_ Create audit log for each text message
+- Need to update end_date when confirm
 
-## UI:
-- x Bootstrap -> formatting
-- x Icons from glyphicons
-- x Update the styles for forms
+## TODOS:
 
-## Refactor TODOS:
-- Integrated validation for phone attr in User:
-    # No spaces or dashes
-    # exactly 10 charachters
-    # all charachters have to be a number
